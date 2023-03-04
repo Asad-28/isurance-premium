@@ -1,0 +1,28 @@
+DATA_SOURCE:
+  EXTRACT_DATA: data_given/insurance.txt
+
+
+LOAD_DATA:
+  RAW_CSV_PATH: data/raw/raw_insurance.csv
+
+
+PROCESSED_DATA:
+  PROCESSED_CSV_PATH: data/processed/process_insurance.csv
+
+
+SPLIT_DATA:
+  TRAIN_CSV_PATH: data/split/train_insurance.csv
+  TEST_CSV_PATH: data/split/test_insurance.csv
+  TEST_SIZE: 0.2
+  RANDOM_STATE: 42
+
+
+
+MODEL_PATH: saved_artifact/model.pkl
+SCHEMA_PATH : saved_artifact/schema.json
+
+
+REPORTS:
+  PARAMS: report/params.json
+  SCORES: report/scores.json
+
